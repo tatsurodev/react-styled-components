@@ -1,4 +1,3 @@
-// importのpathをabsolute pathに変更
 {
   "compilerOptions": {
     "baseUrl": "src"
