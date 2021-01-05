@@ -18,6 +18,7 @@ function App() {
       <h1>App</h1>
       <Button>Primary button</Button>
       <Button secondary>Secondary button</Button>
+      <Button large>Large button</Button>
     </>
   )
 }
