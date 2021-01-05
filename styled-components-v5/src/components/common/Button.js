@@ -2,7 +2,8 @@ import styled from 'styled-components'
 
 const Button = styled.button`
   color: white;
-  background: #f8049c;
+  /* 変数展開内の関数でcomponentのpropsにaccessできる */
+  background: ${(p) => (p.secondary ? 'black' : '#f8049c')};
   font-weight: bold;
   padding: 8px;
   border-radius: 4px;
