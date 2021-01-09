@@ -3,7 +3,7 @@ import styled, { css } from 'styled-components'
 const Button = styled.button`
   color: white;
   /* 変数展開内の関数でcomponentのpropsにaccessできる */
-  background: ${(p) => (p.secondary ? 'black' : '#f8049c')};
+  background: ${(p) => (p.secondary ? '#fdd54f' : '#f8049c')};
   font-weight: bold;
   /* 複数のpropertyをcss helperを使うと1つのinterpolate functionで記述できる */
   ${(p) =>
