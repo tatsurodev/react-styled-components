@@ -1,4 +1,5 @@
 import styled, { css } from 'styled-components'
+import PropTypes from 'prop-types'
 
 // styleのlogicを専用のfunctionに移動、引数でpropsにaccess可
 const largeStyles = ({ large }) => {
@@ -36,4 +37,10 @@ const Button = styled.button`
     color: #666;
   }
 `
+
+Button.propTypes = {
+  large: PropTypes.bool,
+  secondary: PropTypes.bool,
+}
+
 export { Button }
