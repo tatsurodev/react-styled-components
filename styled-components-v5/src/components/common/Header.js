@@ -29,7 +29,7 @@ const Menu = styled.nav`
   padding: 8px;
   box-sizing: border-box;
   border-bottom: 3px solid ${(p) => p.theme.secondaryColor};
-  background: white;
+  background: ${(p) => p.theme.bodyBackgroundColor};
 
   @media (min-width: 768px) {
     display: flex;
@@ -55,7 +55,7 @@ const StyledLink = styled(Link)`
   margin: auto 0;
   /* react-router-domのLink componentは、anchor tagに変換されるがisActive propertyがないので、直接isActiveを渡すとerrorが発生する。一度別名のReactRouterDomLinkのpropsとして受け取り、その中で間接的にspread operatorでattributeを渡すとanchor tagのattributeとして使用できるようになる */
   font-weight: ${(p) => (p.isActive ? 'bold' : 'normal')};
-  color: black;
+  color: ${(p) => p.theme.bodyFontColor};
 `
 
 const MobileMenuIcon = styled.div`
@@ -66,7 +66,7 @@ const MobileMenuIcon = styled.div`
 
   > div {
     height: 3px;
-    background: black;
+    background: ${(p) => p.theme.bodyFontColor};
     margin: 5px 0;
     width: 100%;
   }
